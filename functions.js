@@ -3,16 +3,18 @@
 // Create an array containing the names of all items in the inventory.
 
 let itemName = ["carrots","guava","spinach","cabbage"];
+console.log(itemName);
 
 
 // Create a separate array with the corresponding stock quantities of each item.
 
 let quantityNumber =[100,50,5,10];
+console.log(quantityNumber);
 
-//  Werite a function to add a new item to the inventory, updating both arrays.
+// //  Write a function to add a new item to the inventory, updating both arrays.
 
-function addNew(item,quantity) {
-  itemName.push(item)
+ function addNew(item,quantity) {
+   itemName.push(item)
   quantityNumber.push(quantity)
 }
 addNew("Brocolli",80)
@@ -21,7 +23,7 @@ console.log(quantityNumber);
 
 
 
-// Write a function to update the stock quantity of an existing item.
+//  Write a function to update the stock quantity of an existing item.
 
 
 function update(){
@@ -53,7 +55,7 @@ console.log(calculateTotalNumber());
 
 
 
-//  Write a function to find the item with the lowest stock quantity.
+// //  Write a function to find the item with the lowest stock quantity.
 
 function lowestItem(){
  let lowest=0;
@@ -63,6 +65,6 @@ function lowestItem(){
  }
   
  }
- return itemName[lowest];
+ return quantityNumber[lowest];
 }
 console.log(lowestItem());
